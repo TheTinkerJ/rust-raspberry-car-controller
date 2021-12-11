@@ -1,0 +1,16 @@
+[package]
+name = "rust-raspberry-car-controller"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# 用于文件解析 /dev/input/js0
+libc="0.2.108"
+# 用于手柄连接检测
+glob = "0.3.0"
+# 异步主控
+tokio = { version = "1", features = ["full"] }
+# 树莓派GPIO驱动
+rppal = "0.13.1"
